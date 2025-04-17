@@ -1,3 +1,37 @@
+commit f489098eeba4236e8cf039c6b91a1715b7c787fd
+Merge: 44346b3 13c642b
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Apr 17 07:55:04 2025 -0400
+
+    Merge remote-tracking branch 'rustybird/master'
+
+commit 44346b38cb83c24c48eabdf4d8f0970cfbc5f4d9
+Merge: 28890f5 93608e0
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Apr 17 07:54:25 2025 -0400
+
+    Merge tag 'v0.11.10'
+    
+    version 0.11.10
+
+commit 13c642b879f787e2bd9667bbc62049895d5db3e9
+Author: Rusty Bird <rustybird@net-c.com>
+Date:   Thu Mar 27 11:57:11 2025 +0000
+
+    Update copyright year
+
+commit e7a56d8f6f0d7273a7003f00b229543a4317f16a
+Author: Rusty Bird <rustybird@net-c.com>
+Date:   Thu Mar 27 11:57:10 2025 +0000
+
+    Update comment
+
+commit 28890f582c0ac52fd63b4674b5ddb6270a5a6ba3
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Jan 26 20:06:11 2025 +0000
+
+    bumped changelog version
+
 commit 27603a1a659214542bb65e80e20f3e3ff5eb3ad9
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sun Jan 26 15:06:00 2025 -0500
@@ -54,6 +88,34 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Tue Dec 31 13:26:25 2024 -0500
 
     copyright
+
+commit 93608e078162ff8da043693edf980d6f41dd792f
+Author: Rusty Bird <rustybird@net-c.com>
+Date:   Thu Nov 28 13:59:59 2024 +0000
+
+    Use DormantTimeoutEnabled=0 instead of DirPort hack
+    
+    Replace the ancient DirPort hack with the DormantTimeoutEnabled=0 option
+    (tor >= 0.4.6.x), which is the proper way to ensure consensus updates
+    even if tor is otherwise unused on the gateway.
+    
+    Fixes #51
+
+commit dc36d4462a6b9edf804e6e774c6e264b6699b0c7
+Author: Rusty Bird <rustybird@net-c.com>
+Date:   Thu Nov 28 13:59:58 2024 +0000
+
+    Revert "Mention old tor daemon crash on starting corridor-data"
+    
+    This reverts commit 02d08e532d486334319a2e74834f247e77c1dd74.
+
+commit 02d08e532d486334319a2e74834f247e77c1dd74
+Author: Rusty Bird <rustybird@net-c.com>
+Date:   Wed Nov 27 15:51:59 2024 +0000
+
+    Mention old tor daemon crash on starting corridor-data
+    
+    #51
 
 commit 3952db5740ad55c0808d82bf72fbaf5d15c20aa4
 Author: Rusty Bird <rustybird@net-c.com>
