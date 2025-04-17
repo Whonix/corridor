@@ -2,6 +2,8 @@
 Description=corridor's source NAT
 Documentation=man:corridor(8)
 After=iptables.service
+ConditionPathExists=|/var/run/qubes-service/corridor
+ConditionPathExists=|!/var/run/qubes-service/
 
 [Service]
 ExecStart=@SBIN@/corridor-init-snat

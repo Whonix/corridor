@@ -1,6 +1,8 @@
 [Unit]
 Description=corridor's relay list
 Documentation=man:corridor(8)
+ConditionPathExists=|/var/run/qubes-service/corridor
+ConditionPathExists=|!/var/run/qubes-service/
 
 [Service]
 ExecStart=@SBIN@/corridor-data
