@@ -1,3 +1,17 @@
+commit 7e91e748a346ac2967abce31c229ef17f57386cd
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Apr 17 09:57:16 2025 -0400
+
+    avoid symlinks
+    
+    https://github.com/rustybird/corridor/issues/53
+
+commit 1e3f8cafa7b02614ded1d071d43dbb86ccfa7e34
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Apr 17 11:57:31 2025 +0000
+
+    bumped changelog version
+
 commit f489098eeba4236e8cf039c6b91a1715b7c787fd
 Merge: 44346b3 13c642b
 Author: Patrick Schleizer <adrelanos@whonix.org>
