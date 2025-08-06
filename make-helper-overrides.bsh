@@ -25,7 +25,7 @@ make_install() {
       DESTDIR="$DESTDIR" \
       ETC="/etc" \
       SBIN="/usr/sbin" \
-      SYSTEM="/lib/systemd/system" \
+      SYSTEM="/usr/lib/systemd/system" \
       MAN="/usr/share/man" \
       install install-systemd install-qubes
 }
