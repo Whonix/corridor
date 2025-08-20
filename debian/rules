@@ -17,7 +17,7 @@ override_dh_auto_install:
 		DESTDIR=./debian/tmp \
 		ETC="/etc" \
 		SBIN="/usr/sbin" \
-		SYSTEM="/lib/systemd/system" \
+		SYSTEM="/usr/lib/systemd/system" \
 		MAN="/usr/share/man" \
 		install install-systemd install-qubes
 	dh_install
