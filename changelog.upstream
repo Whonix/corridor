@@ -1,3 +1,40 @@
+commit f4cbc760da74be9bf812e4abb7ab8196636fd12c
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Aug 26 05:30:22 2025 -0400
+
+    re-generate man pages (generated using "genmkfile manpages")
+
+commit b38907a05c017fd6944ab7519800f26ec2bc60bd
+Merge: 7c98bb1 35e98fa
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Aug 20 10:14:33 2025 -0400
+
+    Merge remote-tracking branch 'ArrayBolt3/arraybolt3/trixie'
+
+commit 7c98bb150c1985a6eb638af5ec8c33db452dbf4b
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Aug 20 06:57:33 2025 -0400
+
+    bumped Standards-Version
+
+commit 4193f4722e36e63980005ced91c7e73efc4a8d2d
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Aug 20 06:25:39 2025 -0400
+
+    readme
+
+commit 35e98fab70219b465ff1ba2274f76e675570d334
+Author: Aaron Rainbolt <arraybolt3@ubuntu.com>
+Date:   Tue Aug 5 22:58:23 2025 -0500
+
+    Port to Trixie.
+
+commit 703c8c3f6e13a12227c81758103dbb5eee5bc351
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Apr 17 13:59:13 2025 +0000
+
+    bumped changelog version
+
 commit 7e91e748a346ac2967abce31c229ef17f57386cd
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Apr 17 09:57:16 2025 -0400
