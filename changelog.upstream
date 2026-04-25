@@ -1,3 +1,15 @@
+commit c11cb135840e604b42cff0edf00592512ef68320
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Apr 25 06:16:30 2026 -0400
+
+    printf
+
+commit 54abe371fb634980e32c1ed9edee949263931a0e
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Mar 28 09:58:01 2026 +0000
+
+    bumped changelog version
+
 commit 4fea99438e64810049696c64b66c3a99c3ee85bb
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Mar 28 05:31:27 2026 -0400
@@ -64,7 +76,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Apr 17 09:57:16 2025 -0400
 
     avoid symlinks
-    
+
     https://github.com/rustybird/corridor/issues/53
 
 commit 1e3f8cafa7b02614ded1d071d43dbb86ccfa7e34
@@ -86,7 +98,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Apr 17 07:54:25 2025 -0400
 
     Merge tag 'v0.11.10'
-    
+
     version 0.11.10
 
 commit 13c642b879f787e2bd9667bbc62049895d5db3e9
@@ -125,7 +137,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sun Jan 26 04:40:09 2025 -0500
 
     Merge tag 'v0.11.9'
-    
+
     version v0.11.9
 
 commit 4ad3c05bc1b1a78df25ff3eb08fdc4d391cd831b
@@ -169,11 +181,11 @@ Author: Rusty Bird <rustybird@net-c.com>
 Date:   Thu Nov 28 13:59:59 2024 +0000
 
     Use DormantTimeoutEnabled=0 instead of DirPort hack
-    
+
     Replace the ancient DirPort hack with the DormantTimeoutEnabled=0 option
     (tor >= 0.4.6.x), which is the proper way to ensure consensus updates
     even if tor is otherwise unused on the gateway.
-    
+
     Fixes #51
 
 commit dc36d4462a6b9edf804e6e774c6e264b6699b0c7
@@ -181,7 +193,7 @@ Author: Rusty Bird <rustybird@net-c.com>
 Date:   Thu Nov 28 13:59:58 2024 +0000
 
     Revert "Mention old tor daemon crash on starting corridor-data"
-    
+
     This reverts commit 02d08e532d486334319a2e74834f247e77c1dd74.
 
 commit 02d08e532d486334319a2e74834f247e77c1dd74
@@ -189,7 +201,7 @@ Author: Rusty Bird <rustybird@net-c.com>
 Date:   Wed Nov 27 15:51:59 2024 +0000
 
     Mention old tor daemon crash on starting corridor-data
-    
+
     #51
 
 commit 3952db5740ad55c0808d82bf72fbaf5d15c20aa4
@@ -570,7 +582,7 @@ Author: Rusty Bird <rustybird@net-c.com>
 Date:   Fri Jan 17 14:15:19 2020 +0000
 
     Qubes: Skip corridor.d/95-qubes.conf on any other OS
-    
+
     Closes #44
     Closes #45
 
@@ -585,7 +597,7 @@ Author: Rusty Bird <rustybird@net-c.com>
 Date:   Fri Jan 17 14:15:16 2020 +0000
 
     Qubes: Remove legacy qubes-mount-dirs.service orderings
-    
+
     Obsolete since
     https://github.com/QubesOS/qubes-core-agent-linux/commit/e0e89f153f87e9c92d647344a9bab7ef578108cb
 
@@ -594,7 +606,7 @@ Author: Rusty Bird <rustybird@net-c.com>
 Date:   Fri Jan 17 14:15:15 2020 +0000
 
     Qubes: Remove legacy qubes-netwatcher.service drop-in
-    
+
     Obsolete since
     https://github.com/QubesOS/qubes-core-agent-linux/commit/4a8b10ea8b2f39509d5e73e86ca3d6c5c6d192c9
 
@@ -634,9 +646,9 @@ Author: Rusty Bird <rustybird@net-c.com>
 Date:   Wed Jan 15 21:34:39 2020 +0000
 
     Fail corridor-data on unwritable $RELAYS_STATE(.tmp)
-    
+
     Work around the absence of a 'set -o pipefail' equivalent in POSIX sh.
-    
+
     Fixes #46
 
 commit e400a0317adc6e00d1614782c2b8a066c631e7e5
@@ -644,12 +656,12 @@ Author: Rusty Bird <rustybird@net-c.com>
 Date:   Wed Jan 15 21:34:38 2020 +0000
 
     Fail corridor-data earlier on process_consensus() failure
-    
+
     Terminate the process group immediately if the consensus reader function
     fails, instead of possibly a few hours later when the next consensus
     arrives. Use SIGUSR1, which by default terminates without additional
     actions and is not treated as a successful exit by systemd.
-    
+
     #46
 
 commit ff2e95bcace06ec74f35f647f0de4675ff9097c1
@@ -688,9 +700,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Dec 11 15:27:45 2019 -0500
 
     add 10.138.0.0/16
-    
+
     upstream did that
-    
+
     required for Qubes DispVMs
 
 commit 1080c5e6c002116c3c1ac2e063ed53b4bee394a6
@@ -698,11 +710,11 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Dec 11 15:25:24 2019 -0500
 
     Debian compatibility
-    
+
     allow running this corridor Debian package outside of Qubes Debian templates
-    
+
     out of the box
-    
+
     by applying Qubes specific configuration inside Qubes only
 
 commit a34005289909102b1b304a618468bfb70105c32c
@@ -806,7 +818,7 @@ Author: Rusty Bird <rustybird@net-c.com>
 Date:   Thu Sep 6 11:20:33 2018 +0000
 
     Use more readable style for $BRIDGES, $SNAT, and $LOGGED
-    
+
     #42
 
 commit 8e2465106c99c6e1a81d00fdb53230876da544b5
@@ -820,7 +832,7 @@ Author: Rusty Bird <rustybird@net-c.com>
 Date:   Wed Sep 5 20:49:27 2018 +0000
 
     Remove 20-bridges-auto.conf, add 20-bridges.conf
-    
+
     Fixes #42
 
 commit 40ecb5f00412cf976c42d4cbfbd76dfcaa052d0c
@@ -912,7 +924,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 10 15:47:50 2017 +0000
 
     remove faketime from Build-Depends:
-    
+
     since no longer used for reproducible builds
 
 commit b77859a0c0cd760d68cb3ef0aed2d3eefbd816de
@@ -926,7 +938,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Sun Jan 22 13:09:12 2017 +0000
 
     Add "Documentation=man:corridor(8)" to systemd units
-    
+
     Closes #38
 
 commit bd27085add583deb384028ee53af96ecbd14bcdf
@@ -947,7 +959,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jan 15 12:36:13 2017 +0000
 
     Add Documentation=https://github.com/rustybird/corridor to systemd unit files.
-    
+
     This fixes a lintian warning on Debian.
 
 commit 1eb3799e75ac3172dbe212e9c654b53c2baacb50
@@ -980,7 +992,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jan 11 21:10:55 2017 +0000
 
     Merge branch 'rustybird-master'
-    
+
     Conflicts:
             Makefile
 
@@ -1015,7 +1027,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jan 8 20:38:23 2017 +0000
 
     Merge remote-tracking branch 'rustybird/master'
-    
+
     Conflicts:
             Makefile
             README.md
@@ -1025,7 +1037,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Sun Jan 8 10:26:48 2017 +0000
 
     Add "make all" target
-    
+
     Fixes #35
 
 commit a5bddb0b9c238fb228c117286bdb2d19cea6ee14
@@ -1033,7 +1045,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Sun Jan 8 10:26:48 2017 +0000
 
     Revert "Automatically run clean target before install-systemd target"
-    
+
     This reverts commit e0ce0f8242166a4f8a01462c2d094fb55b6b93ae.
 
 commit acf8c891b4436e54e4e2b859b8da0b4a9a85a1f5
@@ -1054,13 +1066,13 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Sun Dec 18 14:47:17 2016 +0000
 
     SAFETY: Document correct systemd snippet path
-    
+
     If you're using systemd with something other than systemd-networkd to
     bring up your network (e.g. a service named some.service), the systemd
     configuration snippet should go into /etc/systemd/system/some.service.d/
     and *not* into /etc/systemd/some.service.d/ as the README.md previously
     instructed.
-    
+
     In the event that corridor-init-forwarding.service failed for some
     reason, such as a broken iptables binary, the misplaced snippet would
     be ignored and the network would be brought up unfiltered. (corridor
@@ -1085,7 +1097,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Sep 5 16:19:48 2016 +0200
 
     Merge remote-tracking branch 'rustybird/master'
-    
+
     Conflicts:
             Makefile
 
@@ -1094,7 +1106,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Fri Sep 2 12:47:37 2016 +0000
 
     Use -f (noglob) option in corridor-data
-    
+
     Otherwise, line splitting via "set -- $LINE" is unsafe.
 
 commit 7cbdb417d80dcb00aadee1928a3cf88f0b684bb1
@@ -1102,7 +1114,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Wed Aug 17 12:37:28 2016 +0000
 
     Fix broken Markdown
-    
+
     #24
 
 commit d41ef93a7e837bd989bd83284b5c9fd59840214f
@@ -1110,7 +1122,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Wed Aug 17 12:25:35 2016 +0000
 
     Mention Debian package and Whonix wiki page
-    
+
     Closes #24
 
 commit 4d63e2876c868a1b84cf07bc206f8a168b8d711e
@@ -1136,7 +1148,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Wed Aug 3 12:46:23 2016 +0000
 
     Rephrase warning about other firewalls
-    
+
     #26
 
 commit fe3414d4198c9978ebca082e0a560172c132edae
@@ -1144,7 +1156,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Wed Aug 3 12:06:22 2016 +0000
 
     Warn about other firewalls
-    
+
     Fixes #26
 
 commit cc0c4dfab9945a6ce7023cb9ee9e4efffd9273b0
@@ -1152,7 +1164,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Wed Aug 3 12:06:21 2016 +0000
 
     -logged.service: require and order after -data.service
-    
+
     Fixes #32
 
 commit f8b2247073b6c51106d4e23250850f94ab494301
@@ -1173,7 +1185,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jul 31 14:08:37 2016 +0000
 
     Merge remote-tracking branch 'rustybird/master'
-    
+
     Conflicts:
             Makefile
 
@@ -1182,10 +1194,10 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Sun Jul 31 12:32:24 2016 +0000
 
     Use DefaultDependencies=no in -forwarding.service
-    
+
     Avoid ordering cycles if a unit (e.g. Debian's networking.service)
     orders itself after network-pre.target but before basic.target.
-    
+
     Closes #29
 
 commit 47895437c6ea7200ec190b88e1e1c79c6186eadc
@@ -1193,7 +1205,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Sun Jul 31 12:32:23 2016 +0000
 
     Break qubes-iptables.service's cycle
-    
+
     #29
 
 commit e0ce0f8242166a4f8a01462c2d094fb55b6b93ae
@@ -1201,7 +1213,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Sun Jul 31 12:32:21 2016 +0000
 
     Automatically run clean target before install-systemd target
-    
+
     https://github.com/rustybird/corridor/issues/18#issuecomment-233384918
 
 commit 8b3c9f0713b853e1c8d0da5eeb9e2f0027153522
@@ -1221,7 +1233,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Sun Jul 31 12:32:17 2016 +0000
 
     Rename LICENSE to LICENSE-ISC
-    
+
     This way, the license used is obvious just from looking at the
     directory.
 
@@ -1237,7 +1249,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Jul 30 17:35:46 2016 +0000
 
     Merge remote-tracking branch 'rustybird/master'
-    
+
     Conflicts:
             Makefile
 
@@ -1246,7 +1258,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Sat Jul 30 10:53:10 2016 +0000
 
     Requires=, not Require=
-    
+
     #29
 
 commit f8708d415d98a6831ace8819c0a926ef277153c1
@@ -1254,7 +1266,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Sat Jul 30 10:53:09 2016 +0000
 
     Use autoconf-like @SBIN@
-    
+
     #29
 
 commit ce0b65cf4863184487b360361b1f40767e603e0b
@@ -1262,10 +1274,10 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Sun Jul 24 11:47:06 2016 +0000
 
     qubes-service.conf: Use triggering conditions
-    
+
     Start if the Qubes services directory doesn't exist at all, e.g. because
     "make install-qubes" was run on another platform.
-    
+
     Closes #27
 
 commit 3efc8cc212bbc5021d9bd291c986d651246ad9aa
@@ -1280,7 +1292,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Jul 23 14:07:19 2016 +0000
 
     Merge remote-tracking branch 'rustybird/master'
-    
+
     Conflicts:
             Makefile
 
@@ -1289,7 +1301,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Sat Jul 23 12:39:19 2016 +0000
 
     Also load configuration from /usr/local/etc/corridor.d
-    
+
     Fixes #22
 
 commit 640d6b5ce08d0887c921702cb796cdc72a43814c
@@ -1316,9 +1328,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jul 21 18:08:51 2016 +0200
 
     disable man page creation since that is now done by upstream
-    
+
     Thanks to @rustybird for the report!
-    
+
     https://github.com/rustybird/corridor/issues/10#issuecomment-234256335
 
 commit 746773ba5a635c319b1eb83ba9cd7af2f8a73477
@@ -1326,11 +1338,11 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jul 21 17:36:17 2016 +0200
 
     delete README.debian
-    
+
     no longer required since corridor is providing releases now
-    
+
     Thanks for @rustybird for the report!
-    
+
     https://github.com/rustybird/corridor/issues/21#issuecomment-234266585
 
 commit 1ce7055d7394739d1c6162c1cad11ffa207d1d3c
@@ -1338,10 +1350,10 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Thu Jul 21 13:11:41 2016 +0000
 
     Order corridor-data after qubes-mount-dirs
-    
+
     The state file is saved on /rw, but mounting /rw is not part of the
     DefaultDependencies.
-    
+
     Fixes #21
 
 commit e9907c96ffc0264139c48625b6688a160f1d934c
@@ -1349,7 +1361,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jul 18 21:26:28 2016 +0000
 
     move to new corridor version scheme
-    
+
     https://github.com/rustybird/corridor/issues/10
 
 commit dc136643d56de8d2184164eb440f4a5617ac6a7e
@@ -1363,9 +1375,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jul 18 17:14:24 2016 +0000
 
     properly run upstream make file 'make clean'
-    
+
     https://github.com/rustybird/corridor/issues/18
-    
+
     https://github.com/rustybird/corridor/issues/10
 
 commit 01b7cbbdb87032b3f2ecdc78ac8c59cdd68cf967
@@ -1374,11 +1386,11 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jul 18 16:19:41 2016 +0000
 
     use original makefile
-    
+
     https://github.com/rustybird/corridor/issues/18
-    
+
     https://github.com/rustybird/corridor/issues/10
-    
+
     Merge branch 'orig_makefile'
 
 commit 2b17a45a6d262fb5274200132c071f8b4587fca9
@@ -1429,7 +1441,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jul 14 16:25:36 2016 +0200
 
     remove Debian specific configuration file
-    
+
     since https://github.com/rustybird/corridor/issues/11 was fixed upstream in corridor
 
 commit 2b3c46772f9bc25db0516bca90a6fb57922df3e1
@@ -1438,7 +1450,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jul 14 16:23:18 2016 +0200
 
     Merge remote-tracking branch 'rustybird/master'
-    
+
     Conflicts:
             Makefile
 
@@ -1483,7 +1495,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Wed Jul 13 05:12:27 2016 +0000
 
     Qubes support
-    
+
     Fixes #17
 
 commit c8bc8434c05c848c688fa901ce9c4d977679d0ad
@@ -1491,7 +1503,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Wed Jul 13 04:36:28 2016 +0000
 
     Use Debian/Fedora defaults for control connections
-    
+
     Fixes #11
 
 commit d431cb00c41cc8f7331892cb273f417574c4e735
@@ -1499,7 +1511,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Wed Jul 13 04:36:26 2016 +0000
 
     Remove duplicate "Processing router list..." message
-    
+
     Fix regression introduced by a56d751df399ab1c54f64b0d4dc59f732dc0adc3
     ("Fix connection errors for clients' first consensus download")
 
@@ -1514,7 +1526,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Tue Jul 12 13:01:03 2016 +0000
 
     Set DirPort automatically
-    
+
     #16
 
 commit c4267ce7ad5a054fed9442170c07d237a9983dd8
@@ -1522,7 +1534,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Mon Jul 11 14:50:41 2016 +0000
 
     Add NoAdvertise to DirPort line in README
-    
+
     It doesn't make a difference as long as we are not also advertising an
     ORPort, but relying on undocumented behavior is a bad idea.
 
@@ -1531,9 +1543,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jul 11 14:31:06 2016 +0000
 
     use corridor's upstream new version scheme
-    
+
     https://github.com/rustybird/corridor/issues/9
-    
+
     https://github.com/rustybird/corridor/issues/10
 
 commit b63d51e5c1d3d14d238278df26a6a88bb1177dba
@@ -1541,7 +1553,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jul 11 14:29:55 2016 +0000
 
     add README.debian
-    
+
     https://github.com/rustybird/corridor/issues/10
 
 commit 29b98dd30e8f7185981490398d5f020c33082c39
@@ -1563,7 +1575,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jul 11 14:18:22 2016 +0200
 
     Merge branch 'master' into debian_new
-    
+
     Conflicts:
             Makefile
 
@@ -1642,7 +1654,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Jul 8 14:10:32 2016 +0000
 
     fix lintian copyright warning
-    
+
     I: corridor source: unused-file-paragraph-in-dep5-copyright paragraph at line 3
 
 commit eea5c0f4544cd130cd25118733ea1a2328666dfb
@@ -1650,14 +1662,14 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Thu Jul 7 06:19:44 2016 +0000
 
     Actually ensure IPv6 forwarding is disabled
-    
+
     There is no net.ipv6.ip_forward parameter at all! The correct parameter
     to use is net.ipv6.conf.all.forwarding.
-    
+
     Luckily, IPv6 forwarding is disabled by default at the kernel level.
     systemd-networkd doesn't automatically enable it; Debian 8, Fedora 23,
     and Arch don't seem to either.
-    
+
     Also closes #14
 
 commit 20865913dc1bcaddf5d9e532cfbda624873241dd
@@ -1684,7 +1696,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Wed Jul 6 11:47:38 2016 +0000
 
     Add and use corridor-stop-forwarding
-    
+
     Closes #13
 
 commit 50b75479f9dfcabb12488a0574231e3cfa60fcc0
@@ -1704,7 +1716,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Tue Jul 5 18:01:02 2016 +0000
 
     Explain version numbers and git branches
-    
+
     Fixes #9
     Closes #12
 
@@ -1713,7 +1725,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Jul 5 15:50:29 2016 +0000
 
     Debian specific Tor Control Authcookie file configuration
-    
+
     https://github.com/rustybird/corridor/issues/11
 
 commit 3158dbc5ecf7e53a5d236de60eea370bfb2eb7d9
@@ -1722,7 +1734,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Jul 5 17:37:01 2016 +0200
 
     Merge branch 'master' into debian_new
-    
+
     Conflicts:
             Makefile
 
@@ -1731,7 +1743,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Tue Jul 5 12:46:28 2016 +0000
 
     network-pre.target is a passive target
-    
+
     Fix regression introduced by d357f77409cd1b1bf69cf767df4761345e924cc0
     ("Order corridor-init-forwarding before network-pre.target")
 
@@ -1740,7 +1752,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Mon Jul 4 10:22:29 2016 +0000
 
     Make corridor-load-config greexecutable again
-    
+
     Works as a config file sanity tester now. #10
 
 commit 61afc9382cd123421878f4f579ce85adb43c9e6f
@@ -1790,7 +1802,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Fri Jun 24 13:07:00 2016 +0000
 
     Save relays list from consensus to disk
-    
+
     Can usually avoid a deadlock during startup when the control port is on
     a client computer.
 
@@ -1835,7 +1847,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Fri Feb 5 19:15:05 2016 +0000
 
     Fix connection errors for clients' first consensus download
-    
+
     Clients download their first ever consensus from a hardcoded list of
     directory authorities. But these authorities are hardcoded under
     different IP:port addresses than what they publish about themselves in
@@ -1864,7 +1876,7 @@ Author: Rusty Bird <rustybird@openmailbox.org>
 Date:   Wed Dec 2 09:37:12 2015 +0000
 
     Remove misleading hashbang and exe bit from corridor-load-config
-    
+
     corridor-load-config is intended to be sourced (man 1p dot)
 
 commit 9c7c1761d0283439bfc4790d3f656df4d45b702a
