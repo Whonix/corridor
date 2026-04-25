@@ -9,12 +9,12 @@
 genmkfile_lintian_post_opts+=" --suppress-tags spare-manual-page"
 
 make_helper() {
-   echo "Not implemented!" >&2
+   printf '%s\n' "$0: Not implemented!" >&2
    exit 1
 }
 
 make_all() {
-   echo "Not required, skipping."
+   printf '%s\n' "$0: Not required, skipping."
 }
 
 make_install() {
